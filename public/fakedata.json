@@ -1,0 +1,265 @@
+[
+    {
+      "Title": "Rainforest Canopy Trek",
+      "Image": "https://i.ibb.co.com/Jng7kwt/eco-tourism-1-1024x585.webp",
+      "id": 1,
+      "Category": "Hiking",
+      "Description": "Explore the lush rainforest canopy on a guided trek with stunning views and wildlife encounters.",
+      "AdventureCost": 150,
+      "BookingAvailability": "Daily",
+      "Location": "Costa Rica",
+      "Duration": "5 hours",
+      "AdventureLevel": "Intermediate",
+      "IncludedItems": [
+        "Professional guide",
+        "Snacks",
+        "First aid kit",
+        "Binoculars"
+      ],
+      "EcoFriendlyFeatures": [
+        "No single-use plastics",
+        "Certified eco-guides",
+        "Trails designed for minimal environmental impact"
+      ],
+      "MaxGroupSize": 12,
+      "SpecialInstructions": [
+        "Wear sturdy hiking shoes.",
+        "Bring a reusable water bottle.",
+        "Apply eco-friendly insect repellent."
+      ]
+    },
+    {
+      "Title": "Coral Reef Snorkeling",
+      "Image": "https://i.ibb.co.com/hLqq4FX/top-eco-tours-in-Juneau-1024x585.jpg",
+      "id": 2,
+      "Category": "Water Adventure",
+      "Description": "Dive into the underwater world and snorkel among vibrant coral reefs and marine life.",
+      "AdventureCost": 75,
+      "BookingAvailability": "Weekends",
+      "Location": "Great Barrier Reef, Australia",
+      "Duration": "3 hours",
+      "AdventureLevel": "Beginner",
+      "IncludedItems": [
+        "Snorkeling gear",
+        "Life vest",
+        "Marine biology guide",
+        "Refreshments"
+      ],
+      "EcoFriendlyFeatures": [
+        "Use of reef-safe sunscreen",
+        "Partnership with reef restoration projects",
+        "Plastic-free refreshments"
+      ],
+      "MaxGroupSize": 15,
+      "SpecialInstructions": [
+        "Arrive 30 minutes before the start.",
+        "Do not touch the coral or marine life.",
+        "Bring your own towel."
+      ]
+    },
+    {
+      "Title": "Desert Dune Safari",
+      "Image": "https://i.ibb.co.com/ccvT30W/images.jpg",
+      "id": 3,
+      "Category": "Off-road Adventure",
+      "Description": "Experience the thrill of exploring vast desert dunes in an eco-friendly vehicle.",
+      "AdventureCost": 200,
+      "BookingAvailability": "Tuesday to Sunday",
+      "Location": "Sahara Desert, Morocco",
+      "Duration": "4 hours",
+      "AdventureLevel": "Advanced",
+      "IncludedItems": [
+        "Eco-friendly vehicle",
+        "Experienced driver",
+        "Local refreshments",
+        "Safety equipment"
+      ],
+      "EcoFriendlyFeatures": [
+        "Vehicles powered by biodiesel",
+        "Waste management system",
+        "Support for local desert"
+      ],
+      "MaxGroupSize": 8,
+      "SpecialInstructions": [
+        "Wear sunglasses and a hat.",
+        "Bring lightweight clothing.",
+        "Hydrate well before the adventure."
+      ]
+    },
+    {
+      "Title": "Mountain Biking Expedition",
+      "Image": "https://i.ibb.co.com/y55cJ7v/portal-cover.jpg",
+      "id": 4,
+      "Category": "Cycling",
+      "Description": "Ride through rugged mountain trails and enjoy breathtaking vistas.",
+      "AdventureCost": 120,
+      "BookingAvailability": "Friday to Monday",
+      "Location": "Rocky Mountains, USA",
+      "Duration": "6 hours",
+      "AdventureLevel": "Intermediate to Advanced",
+      "IncludedItems": [
+        "Mountain bike rental",
+        "Helmet and gloves",
+        "Trail map",
+        "Energy bars"
+      ],
+      "EcoFriendlyFeatures": [
+        "Use of sustainable biking gear",
+        "Trails maintained for conservation",
+        "Promotion of local flora and fauna awareness"
+      ],
+      "MaxGroupSize": 10,
+      "SpecialInstructions": [
+        "Wear comfortable biking attire.",
+        "Carry a small backpack for essentials.",
+        "Follow trail etiquette."
+      ]
+    },
+    {
+      "Title": "Kayaking with Dolphins",
+      "Image": "https://i.ibb.co.com/hfcws4k/customer-reviews-eco-tours-La-Crosse-1024x585.jpg",
+      "id": 5,
+      "Category": "Water Adventure",
+      "Description": "Paddle through serene waters and get close to dolphins in their natural habitat.",
+      "AdventureCost": 90,
+      "BookingAvailability": "Daily",
+      "Location": "Monterey Bay, USA",
+      "Duration": "2 hours",
+      "AdventureLevel": "Beginner",
+      "IncludedItems": [
+        "Kayak and paddle",
+        "Life jacket",
+        "Guide with marine expertise",
+        "Waterproof bag"
+      ],
+      "EcoFriendlyFeatures": [
+        "Non-motorized activity",
+        "Support for marine wildlife conservation",
+        "Minimal environmental disruption"
+      ],
+      "MaxGroupSize": 6,
+      "SpecialInstructions": [
+        "Do not feed or disturb the wildlife.",
+        "Wear quick-dry clothing.",
+        "Arrive 15 minutes early."
+      ]
+    },
+    {
+        "Title": "Volcanic Crater Exploration",
+        "Image": "https://i.ibb.co.com/VMGNLNR/img-9874-800x600-1.webp",
+        "id": 6,
+        "Category": "Hiking",
+        "Description": "Hike into a dormant volcanic crater and learn about its geological wonders.",
+        "AdventureCost": 130,
+        "BookingAvailability": "Weekends",
+        "Location": "Mount Rinjani, Indonesia",
+        "Duration": "7 hours",
+        "AdventureLevel": "Advanced",
+        "IncludedItems": [
+          "Professional guide",
+          "Safety gear",
+          "Packed lunch",
+          "Walking stick"
+        ],
+        "EcoFriendlyFeatures": [
+          "No litter policy",
+          "Certified eco-tour operators",
+          "Funds contribute to volcanic preservation projects"
+        ],
+        "MaxGroupSize": 10,
+        "SpecialInstructions": [
+          "Wear layered clothing.",
+          "Bring sunscreen and a hat.",
+          "Carry sufficient water."
+        ]
+      },
+      {
+        "Title": "Mangrove Kayaking Safari",
+        "Image": "https://i.ibb.co.com/sjq59QY/Kuno-Forest-Retreats-tents-min.jpg",
+        "id": 7,
+        "Category": "Water Adventure",
+        "Description": "Glide through serene mangrove forests and spot exotic bird species.",
+        "AdventureCost": 85,
+        "BookingAvailability": "Daily",
+        "Location": "Krabi, Thailand",
+        "Duration": "3 hours",
+        "AdventureLevel": "Beginner",
+        "IncludedItems": [
+          "Kayak and paddle",
+          "Life vest",
+          "Nature guide",
+          "Refreshments"
+        ],
+        "EcoFriendlyFeatures": [
+          "Zero-emission activity",
+          "Support for mangrove reforestation",
+          "Eco-certified guides",
+          "Follow trail etiquette."
+        ],
+        "MaxGroupSize": 8,
+        "SpecialInstructions": [
+          "Wear lightweight, water-resistant clothing.",
+          "Bring a reusable water bottle.",
+          "Apply eco-friendly sunscreen."
+        ]
+      },
+      {
+        "Title": "Arctic Wildlife Cruise",
+        "Image": "https://i.ibb.co.com/xL2bZPN/Sur-turtle-watching-tours-1024x585.jpg",
+        "id": 8,
+        "Category": "Wildlife",
+        "Description": "Embark on a small-group cruise to observe polar bears, seals, and arctic birds.",
+        "AdventureCost": 250,
+        "BookingAvailability": "Seasonal (May to September)",
+        "Location": "Svalbard, Norway",
+        "Duration": "6 hours",
+        "AdventureLevel": "Beginner",
+        "IncludedItems": [
+          "Spotting scopes",
+          "Expert naturalist",
+          "Warm beverages",
+          "Safety equipment"
+        ],
+        "EcoFriendlyFeatures": [
+          "Electric-powered boats",
+          "Strict wildlife observation protocols",
+          "Partnership with Arctic conservation efforts"
+        ],
+        "MaxGroupSize": 12,
+        "SpecialInstructions": [
+          "Wear warm, waterproof clothing.",
+          "Carry a camera with a zoom lens.",
+          "Follow all safety instructions."
+        ]
+      },
+      {
+        "Title": "Glacier Trekking Adventure",
+        "Image": "https://i.ibb.co.com/nsYFKgC/Long-Poing-Eco-adventures-2-of-1.jpg",
+        "id": 9,
+        "Category": "Hiking",
+        "Description": "Traverse majestic glaciers with expert guides while learning about climate change impacts.",
+        "AdventureCost": 250,
+        "BookingAvailability": "May to September",
+        "Location": "Iceland",
+        "Duration": "7 hours",
+        "AdventureLevel": "Advanced",
+        "IncludedItems": [
+          "Crampons",
+          "Ice axe",
+          "Helmet",
+          "Hot beverages"
+        ],
+        "EcoFriendlyFeatures": [
+          "Zero-impact trekking routes",
+          "Educational talks on glacial preservation",
+          "Locally sourced refreshments"
+        ],
+        "MaxGroupSize": 10,
+        "SpecialInstructions": [
+          "Wear insulated waterproof clothing.",
+          "Bring sunglasses for sun glare on ice.",
+          "Follow safety protocols."
+        ]
+      }
+  ]
+  

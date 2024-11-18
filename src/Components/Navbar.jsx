@@ -15,9 +15,9 @@ const Navbar = () => {
             <Link to="/userprofile">User Profile</Link>
         </ul>
        </div>
-        <div>
+        <Link to="/login">
             <button className="btn btn-neutral">Login</button>
-        </div>
+        </Link>
     </div>
   );
 };
