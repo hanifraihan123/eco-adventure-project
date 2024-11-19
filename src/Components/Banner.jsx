@@ -1,8 +1,7 @@
-import React from "react";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <div className="carousel overflow-hidden object-cover w-full my-3">
         <div id="slide1" className="carousel-item relative w-full h-[400px] object-cover overflow-hidden">
           <img className="mx-auto w-full"

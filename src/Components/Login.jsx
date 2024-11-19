@@ -1,15 +1,28 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "./AuthProvider/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
+import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
+  const { userLogin, setUser } = useContext(AuthContext);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    userLogin(email, password)
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
 
   return (
-    <div>
+    <div className="bg-sky-300">
       <form onSubmit={handleSubmit} className="card-body w-1/3 mx-auto">
         <div className="form-control">
           <h3 className="font-bold text-2xl text-center">Login Form</h3>
@@ -41,9 +54,10 @@ const Login = () => {
             </a>
           </label>
         </div>
-        <div className="form-control mt-6">
+        <div className="form-control mt-2">
           <button className="btn btn-primary">Login</button>
         </div>
+        <button className="btn btn-warning"><FaGoogle /> Login With Google</button>
         <p className="text-center p-2">
           Create an account? Please{" "}
           <Link to="/register" className="text-red-600">
@@ -51,6 +65,7 @@ const Login = () => {
           </Link>
         </p>
       </form>
+      <Toaster position="top-right" reverseOrder={false} />
     </div>
   );
 };

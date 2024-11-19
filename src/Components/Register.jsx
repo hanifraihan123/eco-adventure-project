@@ -1,7 +1,13 @@
-import { Link } from "react-router-dom";
-import auth from "./Firebase/firebase.init";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "./AuthProvider/AuthProvider";
+import toast, { Toaster } from 'react-hot-toast';
+import { FaGoogle } from "react-icons/fa";
 
 const Register = () => {
+
+  const {createNewUser,setUser} = useContext(AuthContext);
+  const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -9,15 +15,21 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name,email,photo,password)
+        
+        createNewUser(email,password)
+        .then(result=>{
+          const user = result.user;
+          setUser(user)
+          navigate("/")
+        })
+        .catch(error=>{
+          toast.error(error.message)
+        })
     }
-    // const userRegister = (email,password) => {
-    //     return createUserWithEmailAndPassword(auth,email,password)
-    // }
-
+    
   return (
-    <div>
-      <form onSubmit={handleSubmit} className="card-body w-1/3 mx-auto">
+    <div className="bg-sky-300">
+      <form onSubmit={handleSubmit} className="card-body p-2 w-1/3 mx-auto">
         <div className="form-control">
           <h3 className="font-bold text-2xl text-center">Register Form</h3>
           <label className="label">
@@ -39,9 +51,10 @@ const Register = () => {
           </label>
           <input type="password" name="password" placeholder="password" className="input input-bordered" required/>
         </div>
-        <div className="form-control mt-6">
+        <div className="form-control mt-2">
           <button className="btn btn-primary">Register</button>
         </div>
+        <button className="btn btn-warning"><FaGoogle /> Login With Google</button>
         <p className="text-center p-2">
           Already have an account? Please{" "}
           <Link to="/login" className="text-red-600">
@@ -49,6 +62,10 @@ const Register = () => {
           </Link>
         </p>
       </form>
+      <Toaster
+  position="top-right"
+  reverseOrder={false}
+/>
     </div>
   );
 };
