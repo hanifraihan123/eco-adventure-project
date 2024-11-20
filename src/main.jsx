@@ -13,6 +13,8 @@ import Register from './Components/Register.jsx';
 import AdventureDetails from './Components/AdventureDetails.jsx';
 import AuthProvider from './Components/AuthProvider/AuthProvider.jsx';
 import PrivateRoute from './Components/PrivateRoute.jsx';
+import MyProfile from './Components/MyProfile.jsx';
+import UpdateProfile from './Components/UpdateProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
       element: <PrivateRoute><AdventureDetails></AdventureDetails></PrivateRoute>
     },
     {
+      path: "/myprofile",
+      element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
+    },
+    {
       path: "/login",
       element: <Login></Login>
     },
@@ -40,11 +46,7 @@ const router = createBrowserRouter([
     },
     {
       path: "/updateprofile",
-      element: <h3>Update Profile Component</h3>
-    },
-    {
-      path: "/userprofile",
-      element: <h3>User Profile Section</h3>
+      element: <UpdateProfile></UpdateProfile>
     },
     {
       path: "*",
