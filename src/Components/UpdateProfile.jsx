@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
-
 const UpdateProfile = () => {
+
     return (
         <div className="space-y-6 bg-lime-300">
             <Navbar></Navbar>

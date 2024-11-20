@@ -30,7 +30,8 @@ const router = createBrowserRouter([
   },
     {
       path: "/adventuredetails/:id",
-      element: <PrivateRoute><AdventureDetails></AdventureDetails></PrivateRoute>
+      element: <PrivateRoute><AdventureDetails></AdventureDetails></PrivateRoute>,
+      loader: (params) => fetch("/fakedata.json"),
     },
     {
       path: "/myprofile",

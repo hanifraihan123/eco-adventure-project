@@ -1,13 +1,13 @@
-import { useContext } from "react";
-import { AuthContext } from "./AuthProvider/AuthProvider";
+
 import Navbar from "./Navbar";
+import { useLoaderData } from "react-router-dom";
 
 
 const AdventureDetails = ({params}) => {
+console.log(params)
+    const data = useLoaderData();
 
-
-
-    const {user} = useContext(AuthContext);
+    console.log(data)
 
     return (
         <div className="bg-green-200">
@@ -21,7 +21,6 @@ const AdventureDetails = ({params}) => {
   </div>
   <div className="card-body py-4 items-center text-center">
     <h2 className="card-title">Shoes!</h2>
-    <p>{user.email}</p>
     <div className="card-actions">
       <button className="btn btn-primary">Talk With Expert</button>
     </div>
