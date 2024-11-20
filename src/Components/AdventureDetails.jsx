@@ -15,12 +15,15 @@ console.log(params)
             <div className="card bg-base-100 w-1/2 h-[400px] mx-auto justify-center shadow-xl">
   <div className="px-6 pt-6 object-cover overflow-hidden">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes"
+      src="https://i.ibb.co.com/nsYFKgC/Long-Poing-Eco-adventures-2-of-1.jpg"
+      alt=""
       className="rounded-xl w-full h-full object-fill" />
   </div>
   <div className="card-body py-4 items-center text-center">
-    <h2 className="card-title">Shoes!</h2>
+    <h2 className="card-title">Hiking</h2>
+    <p>Title: Traverse majestic glaciers with expert guides while learning about climate change impacts.</p>
+    <p>Category: Glacier Trekking Adventure</p>
+    <p>Duration: 7 Hours</p>
     <div className="card-actions">
       <button className="btn btn-primary">Talk With Expert</button>
     </div>
