@@ -12,6 +12,7 @@ import Login from './Components/Login.jsx';
 import Register from './Components/Register.jsx';
 import AdventureDetails from './Components/AdventureDetails.jsx';
 import AuthProvider from './Components/AuthProvider/AuthProvider.jsx';
+import PrivateRoute from './Components/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
   },
     {
       path: "/adventuredetails/:id",
-      element: <AdventureDetails></AdventureDetails>
+      element: <PrivateRoute><AdventureDetails></AdventureDetails></PrivateRoute>
     },
     {
       path: "/login",

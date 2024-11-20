@@ -3,10 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider/AuthProvider";
 import toast, { Toaster } from 'react-hot-toast';
 import { FaGoogle } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 const Register = () => {
 
-  const {createNewUser,setUser} = useContext(AuthContext);
+  const {createNewUser,setUser,signInWithGoogle} = useContext(AuthContext);
   const navigate = useNavigate();
 
     const handleSubmit = (e) => {
@@ -20,11 +21,23 @@ const Register = () => {
         .then(result=>{
           const user = result.user;
           setUser(user)
+          e.target.reset()
           navigate("/")
         })
         .catch(error=>{
           toast.error(error.message)
         })
+    }
+
+    const handleGoogleSignIn = () => {
+      signInWithGoogle()
+      .then(result=>{
+        console.log(result.user)
+        navigate("/")
+      })
+      .catch(error=>{
+        toast.error(error.message)
+      })
     }
     
   return (
@@ -54,7 +67,7 @@ const Register = () => {
         <div className="form-control mt-2">
           <button className="btn btn-primary">Register</button>
         </div>
-        <button className="btn btn-warning"><FaGoogle /> Login With Google</button>
+        <button onClick={handleGoogleSignIn} className="btn btn-warning"><FaGoogle /> Login With Google</button>
         <p className="text-center p-2">
           Already have an account? Please{" "}
           <Link to="/login" className="text-red-600">
