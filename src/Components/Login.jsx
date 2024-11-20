@@ -35,7 +35,6 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     signInWithGoogle()
     .then(result=>{
-      console.log(result.user)
       navigate("/")
     })
     .catch(error=>{

@@ -14,7 +14,7 @@ const MyProfile = () => {
             <div className="bg-cyan-400 text-center space-y-4 p-10">
             <h3 className="font-bold text-xl">Welcome back Mr/Mrs. {user && user?.displayName}</h3>
             <p><span className="font-bold">Email:</span> {user && user?.email}</p>
-            <img src={user?.imageURL} alt="" />
+            <img className="mx-auto py-6" src={user?.photoURL} alt="" />
             <Link to="/updateprofile"><button className="btn btn-primary">Update</button></Link>
             </div>
         </div>

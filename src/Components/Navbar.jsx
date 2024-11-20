@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./AuthProvider/AuthProvider";
+import { ImGift } from "react-icons/im";
 
 const Navbar = () => {
 
@@ -22,7 +23,7 @@ const {user,logout} = useContext(AuthContext);
   <div className="flex gap-2">
   {
         user && user?.email ? 
-        <div className="flex gap-2 items-center"><p>{user && user.email}</p><button onClick={logout} className="btn btn-secondary">Logout</button></div> : 
+        <div className="flex gap-2 items-center"><div><img className="w-10 rounded-full hover:`${user?.displayName}`" src={user?.photoURL} alt="" /></div><button onClick={logout} className="btn btn-secondary">Logout</button></div> : 
         <Link to="/login">
         <button className="btn btn-secondary">Login</button>
         </Link>
