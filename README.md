@@ -46,6 +46,3 @@
 
 ###
 
-<p align="left">https://service-review-system-server.vercel.app</p>
-
-###
